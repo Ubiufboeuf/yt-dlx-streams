@@ -1,0 +1,6 @@
+{
+  "conventionalCommits.scopes": [
+    "mp4box",
+    "engine"
+  ]
+}
