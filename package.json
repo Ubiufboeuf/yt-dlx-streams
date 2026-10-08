@@ -1,7 +1,7 @@
 {
   "name": "@yt-dlx/streams",
   "description": "Streams Processing Utilities",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "module": "entry.ts",
   "type": "module",
   "main": "./dist/index.js",
