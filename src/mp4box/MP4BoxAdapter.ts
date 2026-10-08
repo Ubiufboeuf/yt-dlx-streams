@@ -25,7 +25,11 @@ export class MP4BoxAdapter implements Fragmenter {
     const outputManifest = `${outputDir}/manifest.mpd`
     args.push('-out', outputManifest)
 
-    await asyncSubprocess(this.binaryPath, args, options)
+    const result = await asyncSubprocess(this.binaryPath, args, options)
+    
+    if (result.type === 'error') {
+      throw result.error
+    }
 
     return { outputManifest }
   }
